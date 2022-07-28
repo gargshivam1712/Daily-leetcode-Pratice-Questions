@@ -7,7 +7,7 @@ class Solution:
 
         zero_index = None
         count = 0
-        print(arr)
+    
         while end  < len(arr):
             if arr[end] == 0:
                 count = count + 1
@@ -22,7 +22,7 @@ class Solution:
                         start = start + 1
 
 
-            print(arr[end] , start , end , maximum)
+            
             end = end + 1
         maximum = max(maximum , end - start)
         return maximum
